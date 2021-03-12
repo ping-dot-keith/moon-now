@@ -1,7 +1,7 @@
 # moon-now
 Where is the Moon right now
 
-This program is designed to run in a Unix-like environment (tested on Linux, OpenBSD). When run, the program will query the UNIX time on the system and calculate the following information about the Moon
+This program is designed to run in a Unix-like environment (tested on Linux, OpenBSD). When run, the program will query the UNIX time on the system and calculate the following information about the Moon.
 
 * Altitude - number of degrees above the horizon
 * Azimuth - number of degrees clockwise from North
@@ -14,7 +14,9 @@ I've used the 'Low-precision formulae for geocentric coodinates of the Moon' alg
 
 Use something like
 
+<pre>
 $ cc moon.c -lm -o moon
+</pre>
 
 ## Installation
 
@@ -22,6 +24,7 @@ Just copy the <code>moon</code> executable to anywhere on your path (or run from
 
 ## ToDo
 
+* Test behaviour for Southern hemisphere and for time zones other than London
 * Add a <code>.config</code> file for geographical long and lat
 * Add a conditional statement to warn if Moon well below the horizon
 * Add Rukl map numbers for the terminator (sub-solar point)
