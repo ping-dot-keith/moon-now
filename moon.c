@@ -121,7 +121,8 @@ double elong, pa, phase;
     zh = x2 * cos(LAT * RADS) + z2 * sin(LAT * RADS);
     alt = asin(zh);
     az  = atan2(yh , xh) + PI;
-    printf(">   alt: %.1f   az: %.1f", alt * DEGS, az * DEGS);
+    printf("  altitude: %3.0f\n", alt * DEGS);
+    printf("   azimuth: %3.0f\n", az * DEGS);    
 
 /*  Ecliptic longitude of Sun using page C24 from AA */
     
@@ -134,7 +135,7 @@ double elong, pa, phase;
     elong = acos(cos(RADS * (slambda - lambda)) * cos(beta * RADS));
     pa = PI - elong;
     phase = ( 1 + cos(pa) ) / 2;
-    printf("   pa: %.0f    phase: %.2f\n", pa * DEGS, phase);
+    printf("     phase: %3.0f\n", phase*100);
 
     return 0;
 }
