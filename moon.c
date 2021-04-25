@@ -55,13 +55,13 @@ double elong, pa, phase;
     lambda -= 0.11 * sin(RADS * range(186.6 + 966404.05 * t));
 
 
-    beta += 5.13 * sin(RADS * range( 93.3 + 483202.03 * t));
+    beta = 5.13 * sin(RADS * range( 93.3 + 483202.03 * t));
     beta += 0.28 * sin(RADS * range(228.2 + 960400.87 * t));
     beta -= 0.28 * sin(RADS * range(318.3 +   6003.18 * t));
     beta -= 0.17 * sin(RADS * range(217.6 - 407332.20 * t));
 
 
-    paralx += 0.9508;
+    paralx = 0.9508;
     paralx += 0.0518 * cos(RADS * range(134.9 + 477198.85 * t));
     paralx += 0.0095 * cos(RADS * range(259.2 - 413335.38 * t));
     paralx += 0.0078 * cos(RADS * range(235.7 + 890534.23 * t));    
