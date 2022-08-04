@@ -135,6 +135,7 @@ double elong, pa, phase;
     elong = acos(cos(RADS * (slambda - lambda)) * cos(beta * RADS));
     pa = PI - elong;
     phase = ( 1 + cos(pa) ) / 2;
+    printf("        PA: %3.0f\n", pa*DEGS);
     printf("     phase: %3.0f\n", phase*100);
 
     return 0;
